@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Life English Speak View Controller-->
+        <scene sceneID="JKy-qB-njo">
+            <objects>
+                <viewController storyboardIdentifier="speak" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fya-Xt-bQm" customClass="LifeEnglishSpeakViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0eZ-Kg-pLM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="english_bg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="l9A-kR-aIi">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tik-oN-x90" userLabel="topView">
+                                <rect key="frame" x="20" y="44" width="374" height="298.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eg_1242x2208_back.png" translatesAutoresizingMaskIntoConstraints="NO" id="V5f-wm-Iwx">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="298.5"/>
+                                    </imageView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入单词" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8xK-2a-sgW">
+                                        <rect key="frame" x="32.5" y="84.5" width="309" height="130"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="8xK-2a-sgW" firstAttribute="centerY" secondItem="tik-oN-x90" secondAttribute="centerY" id="3GC-Ew-RUO"/>
+                                    <constraint firstAttribute="trailing" secondItem="V5f-wm-Iwx" secondAttribute="trailing" id="7sE-d2-L2j"/>
+                                    <constraint firstItem="8xK-2a-sgW" firstAttribute="centerX" secondItem="tik-oN-x90" secondAttribute="centerX" id="7w7-gT-rNn"/>
+                                    <constraint firstAttribute="bottom" secondItem="V5f-wm-Iwx" secondAttribute="bottom" id="9Gl-R7-MM3"/>
+                                    <constraint firstItem="8xK-2a-sgW" firstAttribute="width" secondItem="tik-oN-x90" secondAttribute="height" multiplier="3:2.9" id="Gh3-4V-KJ7"/>
+                                    <constraint firstItem="V5f-wm-Iwx" firstAttribute="leading" secondItem="tik-oN-x90" secondAttribute="leading" id="h1G-x8-GZv"/>
+                                    <constraint firstItem="V5f-wm-Iwx" firstAttribute="top" secondItem="tik-oN-x90" secondAttribute="top" id="ue2-fQ-WPd"/>
+                                    <constraint firstItem="8xK-2a-sgW" firstAttribute="height" secondItem="tik-oN-x90" secondAttribute="height" multiplier="1:2.3" id="uzk-I0-yuh"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oap-cT-0OW">
+                                <rect key="frame" x="103.5" y="352.5" width="207" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="px5-4G-9Jz"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="eg_1242x2208_bt.png"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eg_1242x2208_tc.png" translatesAutoresizingMaskIntoConstraints="NO" id="oVC-Cd-81t">
+                                <rect key="frame" x="187" y="503.5" width="207" height="358.5"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cMz-WY-sNE" firstAttribute="bottom" secondItem="l9A-kR-aIi" secondAttribute="bottom" id="0kP-EG-bk1"/>
+                            <constraint firstItem="l9A-kR-aIi" firstAttribute="top" secondItem="cMz-WY-sNE" secondAttribute="top" id="6lw-Rd-Wy5"/>
+                            <constraint firstItem="tik-oN-x90" firstAttribute="height" secondItem="0eZ-Kg-pLM" secondAttribute="height" multiplier="1:3" id="DOX-kk-hUr"/>
+                            <constraint firstItem="Oap-cT-0OW" firstAttribute="width" secondItem="0eZ-Kg-pLM" secondAttribute="width" multiplier="1:2" id="EB4-ff-fMR"/>
+                            <constraint firstItem="tik-oN-x90" firstAttribute="leading" secondItem="cMz-WY-sNE" secondAttribute="leading" constant="20" id="Ftu-5T-MdK"/>
+                            <constraint firstItem="oVC-Cd-81t" firstAttribute="width" secondItem="0eZ-Kg-pLM" secondAttribute="width" multiplier="1:2" id="HeK-dA-lvu"/>
+                            <constraint firstItem="oVC-Cd-81t" firstAttribute="height" secondItem="0eZ-Kg-pLM" secondAttribute="height" multiplier="1:2.5" id="NhF-4O-sKx"/>
+                            <constraint firstItem="cMz-WY-sNE" firstAttribute="bottom" secondItem="oVC-Cd-81t" secondAttribute="bottom" id="RwT-IH-ooA"/>
+                            <constraint firstItem="cMz-WY-sNE" firstAttribute="trailing" secondItem="oVC-Cd-81t" secondAttribute="trailing" constant="20" id="YSI-HI-xkI"/>
+                            <constraint firstItem="Oap-cT-0OW" firstAttribute="centerX" secondItem="cMz-WY-sNE" secondAttribute="centerX" id="dKk-gG-D91"/>
+                            <constraint firstItem="cMz-WY-sNE" firstAttribute="trailing" secondItem="l9A-kR-aIi" secondAttribute="trailing" id="eIe-DU-iFA"/>
+                            <constraint firstItem="cMz-WY-sNE" firstAttribute="trailing" secondItem="tik-oN-x90" secondAttribute="trailing" constant="20" id="gPi-kC-jC7"/>
+                            <constraint firstItem="tik-oN-x90" firstAttribute="top" secondItem="cMz-WY-sNE" secondAttribute="top" id="kqW-5x-yVc"/>
+                            <constraint firstItem="Oap-cT-0OW" firstAttribute="top" secondItem="tik-oN-x90" secondAttribute="bottom" constant="10" id="r3c-jX-ugb"/>
+                            <constraint firstItem="l9A-kR-aIi" firstAttribute="leading" secondItem="cMz-WY-sNE" secondAttribute="leading" id="urd-H7-fx2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cMz-WY-sNE"/>
+                    </view>
+                    <connections>
+                        <outlet property="InputText" destination="8xK-2a-sgW" id="gnW-nQ-Ayh"/>
+                        <outlet property="speakBtn" destination="Oap-cT-0OW" id="xhY-bA-n1h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MbH-LH-0bl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4" y="108"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="eg_1242x2208_back.png" width="1110" height="581"/>
+        <image name="eg_1242x2208_bt.png" width="515" height="168"/>
+        <image name="eg_1242x2208_tc.png" width="765" height="1266"/>
+        <image name="english_bg.jpg" width="1242" height="2208"/>
+    </resources>
+</document>
